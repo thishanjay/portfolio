@@ -1,26 +1,34 @@
 import Image from "next/image";
-import React from "react";
 
-const page = () => {
+export default function Page() {
   return (
-    <div className="h-full flex items-center justify-center">
-      <div className="flex items-center gap-12 mt-20">
+    <section className="h-full flex items-center justify-center px-6">
+      <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mt-20">
         <Image
-          src="/portfolio.PNG"
+          src="/portfolio.png"
           width={300}
           height={300}
           alt="My photo"
           className="rounded-full object-cover"
+          priority
         />
 
-        <div className="flex flex-col gap-2">
-          <h1 className="text-4xl font-semibold">Hi I'm Thishan Jay</h1>
-          <div className="text-gray-400 text-lg">Full Stack Developer</div>
-          <div>A passionate developer with expertise in Next.js, React,<br/> Tailwind CSS  and backend technologies. Currently pursuing <br />an Honours degree  in Computer Science at the <br /> University of Peradeniya.</div>
+        <div className="flex flex-col gap-4 text-center md:text-left">
+          <h1 className="text-4xl font-semibold">
+            Hi, I’m Thishan Jay
+          </h1>
+
+          <p className="text-gray-400 text-lg">
+            Full-Stack Developer
+          </p>
+
+          <p className="text-gray-300 leading-relaxed max-w-xl">
+            A passionate developer with expertise in Next.js, React, Tailwind CSS,
+            and backend technologies. Currently pursuing an Honours degree in
+            Computer Science at the University of Peradeniya.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default page;
+}
