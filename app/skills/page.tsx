@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>skills page</div>
+    <div>
+      <div className=''>Hello</div>
+    </div>
   )
 }
 export default page

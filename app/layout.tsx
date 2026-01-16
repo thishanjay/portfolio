@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ibmPlexMono.className} antialiased m-4 font-bold min-h-screen grid grid-rows-[auto_1fr]`}>
+      <body className={`${ibmPlexMono.className} antialiased m-4`}>
         <Navbar />
         <main>{children}</main>
       </body>
