@@ -16,6 +16,7 @@ const page = () => {
         <div className="flex flex-col gap-2">
           <h1 className="text-4xl font-semibold">Hi I'm Thishan Jay</h1>
           <div className="text-gray-400 text-lg">Full Stack Developer</div>
+          <div>A passionate developer with expertise in Next.js, React,<br/> Tailwind CSS  and backend technologies. Currently pursuing <br />an Honours degree  in Computer Science at the <br /> University of Peradeniya.</div>
         </div>
       </div>
     </div>
