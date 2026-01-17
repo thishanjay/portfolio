@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { IoMdDownload } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import RoleCarousel from "./components/RoleCarousel";
 
 export default function Home() {
   return (
@@ -18,9 +19,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 text-center md:text-left">
           <h1 className="text-4xl font-semibold">Hi, I’m Thishan Jay</h1>
 
-          <p className="text-gray-400 text-lg">Full-Stack Developer</p>
-          <p className="text-gray-400 text-lg">Web3 enthusiast</p>
-          <p className="text-gray-400 text-lg">Machine Learning practitioner</p>
+          <RoleCarousel />
 
           <p className="text-gray-300 leading-relaxed max-w-xl">
             A passionate developer with expertise in Next.js, React, Tailwind
