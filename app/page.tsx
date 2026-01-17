@@ -48,22 +48,38 @@ export default function Home() {
             </a>
           </div>
           <div className="flex gap-4">
-            <a href="" className="icon-btn">
+            <a
+              href="https://github.com/thishanjay"
+              target="_blank"
+              className="icon-btn"
+            >
               <PiGithubLogoDuotone />
             </a>
-            <a href="" className="icon-btn">
+            <a
+              href="https://www.linkedin.com/public-profile/settings"
+              target="_blank"
+              className="icon-btn"
+            >
               <PiLinkedinLogoDuotone />
             </a>
-            <a href="" className="icon-btn">
+            <a
+              href="https://instagram.com/thishan_jay"
+              target="_blank"
+              className="icon-btn"
+            >
               <PiInstagramLogoDuotone />
             </a>
-            <a href="" className="icon-btn">
+            <a
+              href="https://facebook.com/yourusername"
+              target="_blank"
+              className="icon-btn"
+            >
               <ImFacebook />
             </a>
-            <a href="" className="icon-btn">
+            <a href="mailto:thishanishere@gmail.com" className="icon-btn">
               <MdEmail />
             </a>
-            <a href="" className="icon-btn">
+            <a href="tel:+949228625" className="icon-btn">
               <SlCallEnd />
             </a>
           </div>
