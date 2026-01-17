@@ -19,6 +19,8 @@ export default function Home() {
           <h1 className="text-4xl font-semibold">Hi, I’m Thishan Jay</h1>
 
           <p className="text-gray-400 text-lg">Full-Stack Developer</p>
+          <p className="text-gray-400 text-lg">Web3 enthusiast</p>
+          <p className="text-gray-400 text-lg">Machine Learning practitioner</p>
 
           <p className="text-gray-300 leading-relaxed max-w-xl">
             A passionate developer with expertise in Next.js, React, Tailwind
@@ -26,9 +28,11 @@ export default function Home() {
             in Computer Science at the University of Peradeniya.
           </p>
           <div className="flex gap-4">
-            <button className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-44 bg-white text-black hover:bg-gray-300 hover:gap-4">
-              View My Work
-              <MdKeyboardDoubleArrowRight />
+            <button className="group border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-44 bg-white text-black hover:bg-gray-300">
+              <span>View My Work</span>
+              <span className="transition-transform duration-300 group-hover:translate-x-2 group-hover:scale-110">
+                <MdKeyboardDoubleArrowRight />
+              </span>
             </button>
             <button className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-32 p-2 hover:bg-gray-800">
               <IoMdDownload />
