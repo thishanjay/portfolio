@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IoMdDownload } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -24,7 +25,16 @@ export default function Home() {
             CSS, and backend technologies. Currently pursuing an Honours degree
             in Computer Science at the University of Peradeniya.
           </p>
-          <button className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-32 p-2"><IoMdDownload />Resume</button>
+          <div className="flex gap-4">
+            <button className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-44 bg-white text-black hover:bg-gray-300 hover:gap-4">
+              View My Work
+              <MdKeyboardDoubleArrowRight />
+            </button>
+            <button className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-32 p-2 hover:bg-gray-800">
+              <IoMdDownload />
+              Resume
+            </button>
+          </div>
         </div>
       </div>
     </section>
