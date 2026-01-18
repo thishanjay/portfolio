@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import { IoMdDownload } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import RoleCarousel from "./RoleCarousel";
@@ -11,7 +12,7 @@ import { SlCallEnd } from "react-icons/sl";
 
 const Hero = () => {
   return (
-    <section className="h-full flex items-center justify-center px-6">
+    <section className="h-full flex items-center justify-center px-6 pb-10">
       <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mt-20 mb-10">
         <Image
           src="/portfolio.png"
@@ -33,12 +34,16 @@ const Hero = () => {
             in Computer Science at the University of Peradeniya.
           </p>
           <div className="flex gap-4">
-            <button className="group border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-44 bg-white text-black hover:bg-gray-300">
+            <Link
+              href="#projects"
+              className="group border rounded-2xl flex justify-center items-center gap-2 w-44 bg-white text-black hover:bg-gray-300 transition"
+            >
               <span>View My Work</span>
               <span className="transition-transform duration-300 group-hover:translate-x-2 group-hover:scale-110">
                 <MdKeyboardDoubleArrowRight />
               </span>
-            </button>
+            </Link>
+
             <a
               href="/resume.pdf"
               download="ThishanJay_Resume.pdf"
