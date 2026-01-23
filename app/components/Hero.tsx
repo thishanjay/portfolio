@@ -12,7 +12,7 @@ import { SlCallEnd } from "react-icons/sl";
 
 const Hero = () => {
   return (
-    <section className="h-full flex items-center justify-center px-6 pb-10">
+    <section className="h-full flex items-center justify-center px-6 pb-20 pt-10">
       <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mt-20 mb-10">
         <Image
           src="/portfolio.png"

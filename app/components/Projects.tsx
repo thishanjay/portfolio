@@ -19,19 +19,19 @@ const projects = [
     title: "Random country picker",
     description: "Randomly picks country and it's capital",
     image: "/projects/rcncp.png",
-    link: "#",
+    link: "https://random-country-and-capital-picker.vercel.app/",
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="p-10 bg-gray-900">
+    <section id="projects" className="p-10 bg-gray-900 pt-20">
       <h1 className="text-4xl font-bold text-center">Featured Projects</h1>
       <p className="text-lg text-gray-400 text-center">
         Checkout some of my recent work
       </p>
       {/* Grid of projects */}
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 mt-6">
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 mt-6 px-5">
         {projects.map((project, index) => (
           <a
             key={index}
