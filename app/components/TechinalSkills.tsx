@@ -17,24 +17,31 @@ const TechinalSkills = () => {
 
   return (
     <section className="p-10">
-      <h1 className="text-4xl font-bold text-center">Technical Skills</h1>
-      <p className="text-center">
+      <h1 className="text-center text-4xl font-bold text-gray-900 dark:text-white">
+        Technical Skills
+      </h1>
+      <p className="text-center text-gray-600 dark:text-gray-400">
         My expertise across various technologies and tools
       </p>
 
-      {/* Tabs */}
       <div className="flex">
-        <div className="inline-flex gap-4 mx-auto bg-gray-800 m-4 p-2 rounded-2xl text-gray-400">
+        <div className="mx-auto m-4 inline-flex gap-4 rounded-2xl bg-gray-100 p-2 text-gray-600 shadow-sm dark:bg-gray-800 dark:text-gray-400">
           <button
             onClick={() => setActiveTab("languages")}
-            className={`tech-skills ${activeTab === "languages" && "text-white"}`}
+            className={`tech-skills ${
+              activeTab === "languages"
+                ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                : "hover:bg-gray-200 dark:hover:bg-gray-700"
+            }`}
           >
             Languages
           </button>
           <button
             onClick={() => setActiveTab("frameworks")}
             className={`tech-skills ${
-              activeTab === "frameworks" && "text-white"
+              activeTab === "frameworks"
+                ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                : "hover:bg-gray-200 dark:hover:bg-gray-700"
             }`}
           >
             Frameworks / Libraries
@@ -42,7 +49,9 @@ const TechinalSkills = () => {
           <button
             onClick={() => setActiveTab("concepts")}
             className={`tech-skills ${
-              activeTab === "concepts" && "text-white"
+              activeTab === "concepts"
+                ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                : "hover:bg-gray-200 dark:hover:bg-gray-700"
             }`}
           >
             Concepts
@@ -50,8 +59,7 @@ const TechinalSkills = () => {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="p-6 bg-gray-800 m-5 rounded-xl flex justify-center gap-8 text-4xl text-gray-300">
+      <div className="m-5 flex justify-center gap-8 rounded-xl bg-gray-100 p-6 text-4xl text-gray-700 shadow-sm dark:bg-gray-800 dark:text-gray-300">
         {activeTab === "languages" && (
           <>
             <SiC />
@@ -72,7 +80,7 @@ const TechinalSkills = () => {
         )}
 
         {activeTab === "concepts" && (
-          <div className="text-lg text-center">
+          <div className="text-center text-lg">
             <p>OOP</p>
             <p>Data Structures & Algorithms</p>
             <p>REST APIs</p>

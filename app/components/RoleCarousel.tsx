@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function RoleCarousel() {
   return (
-    <p className="text-gray-300 text-xl font-bold">
+    <p className="text-xl font-bold text-gray-700 dark:text-gray-300">
       <Typewriter
         words={[
           "Full-Stack Developer",

@@ -12,31 +12,33 @@ import { SlCallEnd } from "react-icons/sl";
 
 const Hero = () => {
   return (
-    <section className="h-full flex items-center justify-center px-6 pb-20 pt-10">
-      <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mt-20 mb-10">
+    <section className="flex h-full items-center justify-center px-6 pb-20 pt-10">
+      <div className="mt-20 mb-10 flex max-w-5xl flex-col items-center gap-12 md:flex-row">
         <Image
           src="/portfolio.png"
           width={300}
           height={300}
           alt="My photo"
-          className="rounded-full object-cover"
+          className="rounded-full object-cover shadow-lg"
           priority
         />
 
         <div className="flex flex-col gap-4 text-center md:text-left">
-          <h1 className="text-5xl font-bold">Hi, I’m Thishan Jay</h1>
+          <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
+            Hi, I’m Thishan Jay
+          </h1>
 
           <RoleCarousel />
 
-          <p className="text-gray-300 leading-relaxed max-w-xl">
+          <p className="max-w-xl leading-relaxed text-gray-700 dark:text-gray-300">
             A passionate developer with expertise in Next.js, React, Tailwind
             CSS, and backend technologies. Currently pursuing an Honours degree
             in Computer Science at the University of Peradeniya.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link
               href="#projects"
-              className="group border rounded-2xl flex justify-center items-center gap-2 w-44 bg-white text-black hover:bg-gray-300 transition"
+              className="group flex w-44 items-center justify-center gap-2 rounded-2xl border border-gray-300 bg-gray-900 px-4 py-3 text-white transition hover:bg-gray-700 dark:border-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             >
               <span>View My Work</span>
               <span className="transition-transform duration-300 group-hover:translate-x-2 group-hover:scale-110">
@@ -47,13 +49,13 @@ const Hero = () => {
             <a
               href="/resume.pdf"
               download="ThishanJay_Resume.pdf"
-              className="border rounded-2xl flex justify-center items-center gap-2 hover:cursor-pointer w-32 p-2 hover:bg-gray-800"
+              className="flex w-32 items-center justify-center gap-2 rounded-2xl border border-gray-300 p-2 text-gray-700 transition hover:cursor-pointer hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
             >
               <IoMdDownload />
               Resume
             </a>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <a
               href="https://github.com/thishanjay"
               target="_blank"

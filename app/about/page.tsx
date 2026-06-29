@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div className="px-10 py-10">
-      <p className="px-20 text-gray-400 leading-relaxed">
+      <p className="px-20 leading-relaxed text-gray-700 dark:text-gray-400">
         I’m an undergraduate Computer Science (Honours) student at the
         University of Peradeniya and a passionate Full-Stack Developer who
         enjoys turning ideas into meaningful, real-world products.
@@ -28,23 +28,27 @@ export default function Page() {
         and higher studies.
       </p>
 
-      <h1 className="text-2xl text-center mt-12 mb-6">Education</h1>
+      <h1 className="mb-6 mt-12 text-center text-2xl text-gray-900 dark:text-white">
+        Education
+      </h1>
 
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 m-10">
-        <div className="bg-gray-900 rounded-3xl p-6 border border-white/5">
-          <h3 className="font-bold text-lg">Undergraduate</h3>
+      <div className="m-10 mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm dark:border-white/5 dark:bg-gray-900">
+          <h3 className="text-lg font-bold">Undergraduate</h3>
           <p className="font-bold">BSc. (Honours) in Computer Science</p>
-          <p className="text-gray-400">University of Peradeniya</p>
-          <div className="text-gray-400 flex justify-between text-sm mt-2">
+          <p className="text-gray-600 dark:text-gray-400">
+            University of Peradeniya
+          </p>
+          <div className="mt-2 flex justify-between text-sm text-gray-600 dark:text-gray-400">
             <p>Jan 2024 – Present</p>
             <p>Peradeniya, Kandy, Sri Lanka</p>
           </div>
         </div>
 
-        <div className="bg-gray-900 rounded-3xl p-6 border border-white/5">
-          <h3 className="font-bold text-lg">College</h3>
+        <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm dark:border-white/5 dark:bg-gray-900">
+          <h3 className="text-lg font-bold">College</h3>
           <p className="font-bold">St. Anne's College</p>
-          <div className="text-gray-400 flex justify-between text-sm mt-2">
+          <div className="mt-2 flex justify-between text-sm text-gray-600 dark:text-gray-400">
             <p>Jan 2022 – Jan 2024</p>
             <p>Kurunegala, Sri Lanka</p>
           </div>
